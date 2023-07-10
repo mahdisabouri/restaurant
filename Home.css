@@ -1,0 +1,476 @@
+
+
+
+body {
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-color: silver;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.nav-item {
+    margin: 30px;
+    text-decoration: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#home {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#home:hover::before {
+    transform: scaleX(1);
+}
+
+#home:hover {
+    color: orange;
+
+}
+
+
+#about::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#about {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#about:hover::before {
+    transform: scaleX(1);
+}
+
+#about:hover {
+    color: green;
+
+}
+
+#TESTIMONIALS::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#TESTIMONIALS {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#TESTIMONIALS:hover::before {
+    transform: scaleX(1);
+}
+
+#TESTIMONIALS:hover {
+    color: blue;
+
+}
+
+#Comment::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#Comment {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#Comment:hover::before {
+    transform: scaleX(1);
+}
+
+#Comment:hover {
+    color: red;
+
+}
+
+
+#content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rebeccapurple;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#content {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#content:hover::before {
+    transform: scaleX(1);
+}
+
+#content:hover {
+    color: rebeccapurple;
+
+}
+
+
+#cart::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: brown;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#cart {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+#cart:hover::before {
+    transform: scaleX(1);
+}
+
+#cart:hover {
+    color: brown;
+
+}
+
+
+
+.mySlides {
+    display: none;
+}
+
+img {
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #13ff3a 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+}
+
+
+
+
+.text-js {
+    opacity: 0;
+}
+
+.cursor {
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    width: 2px;
+    /* Change colour of Cursor Here */
+    background-color: white;
+    z-index: 1;
+    animation: flash 0.5s none infinite alternate;
+}
+
+.credit {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.credit {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+}
+
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+.d-flex {
+    display: flex;
+}
+.demo {
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.column{
+    float: left;
+    margin: 10px;
+    background-color: wheat;
+    color: #000;
+}
+
+
+.title,.news__title,.material_use{
+    border: 3px solid red;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+.row{
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+.animate-charcter_1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #ff0000 0%,
+            #7a1010 29%,
+            #13efff 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+}
+
+/* Glyph, by Harry Roberts */
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+a {
+    list-style-type: none;
+}
+
+
+#footer{
+  text-align: left;
+    padding : 5px;
+    margin-left: 5px;
+}
+
+i{
+    list-style-type: none;
+
+}
+
+#instagram:hover{
+    background-color: pink;
+}
+
+
+#instagram{
+    color: #000;
+
+}
+
+#telegram{
+    color: #000;
+
+}
+
+#telegram:hover {
+    background-color: skyblue;
+}
+
+
+
+#whatsapp{
+    color: #000;
+}
+
+#whatsapp:hover{
+    background-color: #13ff3a;
+}
+
+#youtube{
+    color: #000;
+}
+
+#youtube:hover{
+    background-color: red;
+}
+
+.address{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    background-color: #000;
+}
+
+
+#chicken:hover{
+    cursor: pointer;
+}
+
+
+#meat_pizza{
+    cursor: pointer;
+
+}
+
+#vegetable_pizza{
+    cursor: pointer;
+}
+
+#hot_dog{
+    cursor: pointer;   
+}
+
+#hamberger{
+    cursor: pointer;   
+}
+
+#potato{
+    cursor: pointer;    
+}

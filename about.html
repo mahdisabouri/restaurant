@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza sib 360</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <!-- add music for listening -->
+  <audio autoplay>
+    <source src="Hamed Nikpey Lahzeha 320 .mp3" type="audio/mp3">
+  </audio>
+
+
+
+
+      <!-- menue -->
+  <div>
+    <nav class="nav">
+      <a href="Home.html" class="nav-item" id="home" active-color="orange">HOME</a>
+
+      <a href="" class="nav-item" id="about" active-color="green">ABOUT</a>
+
+      <a href="https://sib360.com/career/franchising" class="nav-item" id="TESTIMONIALS" active-color="blue">Representation</a>
+
+      <a href="comment.html" class="nav-item" id="Comment" active-color="red">Comment</a>
+
+      <a href="" class="nav-item" id="content" active-color="rebeccapurple">How To ...</a>
+
+      <a href="cart.html" class="nav-item" id="cart" active-color="skyblue">CART</a>
+
+
+      <span class="nav-indicator"></span>
+
+    </nav>
+  </div>
+
+  <div class="container">
+
+    <div class="row"> 
+
+      <div class="col-md-12 text-center">
+
+        <h3 class="animate-charcter_1"> pizza sib 360</h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="d-flex">
+
+    <div class="demo col-6">
+      <p id="demo"></p>
+    </div>
+
+  </div>
+
+
+
+  
+
+
+  <footer>
+    <div id="footer">
+      <div>
+        <span>tel : 02122286060</span>
+      </div>
+
+
+
+
+
+      <a href="https://www.instagram.com/pizzasib360/" target="_blank" rel="noopener noreferrer">
+        <i id="instagram" class="fa fa-instagram" style="border: 1px solid black; font-size:  3em; border-radius:20px 20px 20px 20px; border: none;"></i>
+      </a>
+
+
+      <a href="http://t.me/pizzasib360_bot" target="_blank">
+        <i id="telegram" class="fa fa-telegram " style="border: 1px solid black; font-size:  3em; border-radius:20px 20px 20px 20px; border: none;"></i>
+      </a>
+
+
+    
+
+
+
+      <a href="whatsapp://send?phone=982141304333" target="_blank">
+        <i id="whatsapp" class="fa fa-whatsapp" style="border: 1px solid black; font-size:  3em; border-radius:20px 20px 20px 20px; border: none;"></i>
+      </a>
+
+
+      <a href="">
+        <i id="youtube" class="fa fa-youtube" style="border: 1px solid black; font-size:  3em; border-radius:20px 20px 20px 20px; border: none;"></i>
+      </a>
+
+      <div><span class="address">address: <br>
+        Tehran-shahrake Ekbatan-omid Street
+      </div>
+      </span>
+    </div>
+
+  </footer>
+  <script>
+    
+
+    // auto write text part 
+    const text = "Welcom to our restaurant Thank you for choosing our restaurant and we promise that you will not regret your choice 🙏.We have all kinds of food that you like and we are sure that you will like our food and once you eat our food, you will not choose other restaurants and we are sure that if you go to other restaurants, you will come back to your restaurant. We are very happy to welcome you and even you can visit our kitchen to feel at ease about how to cook food. Please follow us on Instagram, Telegram, Facebook, YouTube.This restaurant is one of the best famous and international restaurants in Iran, which is managed by Mr. Mehdi Sabouri, who has a doctorate in management and international cuisine.One of the constant concerns of Apple Pizza has been the importance of effective principles and rules in the modern world and breaking complex and ineffective rules. All departments of the Sib 360 collection, from the central office to the branches, always put the observance of simple but important principles, which is the basic condition of being in the collection, at the top of their work.We are proud that by implementing this instruction and implementing international standard methods with great care, we succeeded in obtaining 'ISO9001' , 'ISO22000', 'HACCP' and 'Halal' certificates. We hope that by maintaining and improving the quality of our products and services, we can always have the trust and interest of our customers as the most valuable certificate.";
+
+
+
+
+
+    let index = 0;
+
+    function writeText() {
+
+
+
+      document.getElementById("demo").innerText = text.slice(0, index);
+      document.getElementById("demo").style.color = "black";
+      document.getElementById("demo").style.background = "white";
+
+      index++;
+      if (index > text.lenght) {
+
+        index = 0;
+
+      }
+
+
+    }
+    setInterval(writeText, 100);
+
+  </script>
+
+
+</body>
+</html>
